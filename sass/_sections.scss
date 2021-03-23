@@ -13,3 +13,59 @@
         font-size: 1.5rem;
     }
 }
+
+.elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: .7rem;
+    padding: 3rem;
+    .element { 
+        flex: 1;
+        &:last-child {
+            margin-right: 0rem;
+        }
+        width: 30vw;
+        &__image {
+            img {
+                border-radius: 2rem;
+            }
+        }
+
+        &__text {
+            margin-top: 1rem;
+        }
+    }
+}
+
+.whattheysay {
+    background: linear-gradient(to right bottom, rgba(0, 128, 0, 0.288), rgba(255, 255, 255, 0.308)), url(../img/port.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+    height: 90vh;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    &__image {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        img {
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    &__text {
+        grid-column: 3 / 8;
+        grid-row: 2 / 6;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+}
