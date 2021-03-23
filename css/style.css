@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 62.5%;
+  background-color: #F5EDF0;
+  font-family: 'Lexend', sans-serif; }
+
+.header {
+  height: 100vh;
+  margin-bottom: 2rem; }
+
+.header__nav {
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .header__nav ul {
+    list-style: none;
+    display: flex;
+    color: black;
+    font-size: 1.2rem; }
+    .header__nav ul li {
+      margin-right: 2rem;
+      clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+      padding: 1rem;
+      transition: all .3s; }
+      .header__nav ul li:last-child {
+        margin-right: 0rem; }
+      .header__nav ul li:hover {
+        transition: all .3s;
+        color: green;
+        cursor: pointer; }
+
+.header__hero {
+  background: linear-gradient(to right bottom, rgba(25, 204, 100, 0.322), rgba(185, 160, 160, 0.356)), url(../img/singletree.jpg);
+  height: 88vh;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr); }
+  .header__hero__text {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3; }
+    .header__hero__text h1 {
+      color: white;
+      font-size: 3rem; }
+    .header__hero__text p {
+      color: white;
+      font-size: 1.3rem; }
+
+.mission {
+  height: 70vh; }
+  .mission h2 {
+    font-size: 4rem;
+    text-align: center;
+    padding: 5rem; }
+  .mission h3 {
+    text-align: center;
+    font-size: 1.5rem; }

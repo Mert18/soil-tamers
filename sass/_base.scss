@@ -1,0 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
+
+$color-1: #D5F9DE;
+$color-2: #DBF4A7;
+$color-3: #218380;
+$color-4: #618B4A;  
+$color-5: #40531B;
+$color-6: #1A535C;
+
+$base-color: #F5EDF0;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    background-color: $base-color;
+    font-family: 'Lexend', sans-serif;
+}
