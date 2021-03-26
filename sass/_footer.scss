@@ -1,0 +1,29 @@
+
+.footer {
+    height: 40vh;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    align-items: center;
+    font-size: 1.2rem;
+    ul {
+        list-style:none;
+        li {
+            margin-top: 1rem;
+        }
+    }
+    &__socials {
+        grid-column: 1/2;
+    }
+    &__contact {
+        grid-column: 2/3;
+    }
+    &__text {
+        grid-column: 3/4;
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+}
