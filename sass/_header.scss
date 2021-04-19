@@ -15,22 +15,14 @@
         display: flex;
         color: black;
         font-size: 1.2rem;
-        li {
+
+        a {
             margin-right: 2rem;
-            clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
-            padding: 1rem;
-            transition: all .3s;
-            &:last-child {
+            &:last-child{
                 margin-right: 0rem;
             }
-
-            &:hover {
-                transition: all .3s;
-                color: green;
-                cursor: pointer;
-            }
         }
-    }
+}
 }
 
 .header__hero {

@@ -18,8 +18,20 @@ $base-color: #F5EDF0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 62.5%;
     background-color: $base-color;
     font-family: 'Lexend', sans-serif;
+
+    a {
+        text-decoration: none;
+        color: black;
+        &:hover {
+            color: green;
+        }
+    }
 }
